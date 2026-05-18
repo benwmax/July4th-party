@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>The Westwells' 4th of July Pool Party</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Pacifico&family=Nunito:wght@400;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- Hero -->
+  <section class="hero">
+    <div class="bubbles" aria-hidden="true">
+      <span></span><span></span><span></span><span></span>
+      <span></span><span></span><span></span><span></span>
+    </div>
+    <div class="hero-content">
+      <p class="pre-title">&#127482;&#127480; You're Invited &#127482;&#127480;</p>
+      <h1>The Westwells'<br>4th of July<br>Pool Party</h1>
+      <div class="date-badge">
+        <span class="day">Friday</span>
+        <span class="date-num">July 4</span>
+        <span class="year">2025</span>
+      </div>
+      <p class="time">&#9728;&#65039; Starting at 1:00 PM</p>
+      <p class="location">&#128205; Maxwell House</p>
+      <a href="#rsvp" class="cta-btn">RSVP Now &#127754;</a>
+    </div>
+    <div class="wave-divider">
+      <svg viewBox="0 0 1440 110" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="none">
+        <path d="M0,40 C240,90 480,10 720,50 C960,90 1200,10 1440,50 L1440,110 L0,110 Z" fill="#e0f4ff"/>
+      </svg>
+    </div>
+  </section>
+
+  <!-- Details -->
+  <section class="details" id="details">
+    <div class="container">
+      <h2>Party Details</h2>
+      <div class="cards">
+        <div class="card">
+          <div class="card-icon">&#128197;</div>
+          <h3>When</h3>
+          <p>Friday, July 4th, 2025</p>
+          <p>1:00 PM onwards</p>
+        </div>
+        <div class="card">
+          <div class="card-icon">&#128205;</div>
+          <h3>Where</h3>
+          <p>Maxwell House</p>
+        </div>
+        <div class="card">
+          <div class="card-icon">&#127828;</div>
+          <h3>Food &amp; Drinks</h3>
+          <p>We're providing food and beverages!</p>
+          <p class="highlight">BYOB &amp; snacks encouraged &#127881;</p>
+        </div>
+        <div class="card">
+          <div class="card-icon">&#127944;</div>
+          <h3>What to Bring</h3>
+          <p>Swimsuit, towel &amp; sunscreen</p>
+          <p>Your favorite drinks &amp; snacks</p>
+        </div>
+      </div>
+    </div>
+    <div class="wave-divider">
+      <svg viewBox="0 0 1440 110" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="none">
+        <path d="M0,60 C360,10 720,100 1080,40 C1260,10 1380,70 1440,60 L1440,110 L0,110 Z" fill="#fff"/>
+      </svg>
+    </div>
+  </section>
+
+  <!-- RSVP -->
+  <section class="rsvp-section" id="rsvp">
+    <div class="container">
+      <h2>RSVP</h2>
+      <p class="rsvp-sub">Let us know you're coming!</p>
+
+      <form id="rsvp-form" novalidate>
+        <div class="form-group">
+          <label for="name">Your Name <span class="req">*</span></label>
+          <input type="text" id="name" name="name" placeholder="Full name" autocomplete="name" required>
+        </div>
+
+        <div class="form-group">
+          <label for="address">Your Address <span class="req">*</span></label>
+          <input type="text" id="address" name="address" placeholder="123 Main St, City, State" autocomplete="street-address" required>
+        </div>
+
+        <div class="form-group">
+          <label class="checkbox-label">
+            <input type="checkbox" id="has-plus-one">
+            <span>Bringing a +1?</span>
+          </label>
+        </div>
+
+        <div class="form-group hidden" id="plus-one-group">
+          <label for="plus-one-name">Plus One's Name</label>
+          <input type="text" id="plus-one-name" name="plusOneName" placeholder="Their name">
+        </div>
+
+        <button type="submit" id="submit-btn">Count Me In! &#127878;</button>
+
+        <div id="form-msg" class="form-msg hidden" role="alert"></div>
+      </form>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer>
+    <div class="fireworks">&#127878; &#127879; &#127878;</div>
+    <p>See you poolside! &mdash; The Westwells</p>
+    <p class="footer-sub">Have questions? Reach out to your host.</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
