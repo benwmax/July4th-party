@@ -1,5 +1,5 @@
 // Replace with your deployed Google Apps Script Web App URL
-const APPS_SCRIPT_URL = 'YOUR_APPS_SCRIPT_URL_HERE';
+const APPS_SCRIPT_URL = 'https://script.google.com/macros/s/AKfycbzRpgO5An3DEUc5y6KITnGQkczYWKLdSjzcPsgp-XBdE9Z7qvQKaZqgJ-9WX3-g9XtH/exec';
 
 const hasPlusOneCheckbox = document.getElementById('has-plus-one');
 const plusOneGroup       = document.getElementById('plus-one-group');
