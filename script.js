@@ -36,21 +36,17 @@ form.addEventListener('submit', async (e) => {
   const payload = { name, address, plusOneName: plusOne };
 
   try {
-    const res  = await fetch(APPS_SCRIPT_URL, {
-      method:   'POST',
-      redirect: 'follow',
-      body:     JSON.stringify(payload),
+    await fetch(APPS_SCRIPT_URL, {
+      method: 'POST',
+      mode:   'no-cors',
+      body:   JSON.stringify(payload),
     });
-    const json = await res.json();
 
-    if (json.status === 'success') {
-      showMsg('🎉 You\'re on the list! See you July 4th!', 'success');
-      form.reset();
-      plusOneGroup.classList.add('hidden');
-      plusOneInput.required = false;
-    } else {
-      throw new Error(json.message || 'Unexpected response');
-    }
+    // no-cors returns an opaque response — can't read it, so assume success
+    showMsg('🎉 You\'re on the list! See you July 4th!', 'success');
+    form.reset();
+    plusOneGroup.classList.add('hidden');
+    plusOneInput.required = false;
   } catch (err) {
     showMsg('😟 Something went wrong. Please try again or contact your host.', 'error');
   } finally {
