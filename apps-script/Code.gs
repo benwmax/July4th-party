@@ -3,7 +3,7 @@
 // Deploy as: Web App > Execute as: Me > Who has access: Anyone
 // -------------------------------------------------------
 
-var SHEET_ID = 'https://docs.google.com/spreadsheets/d/10bSefKsO4NuyVZJMDYNQAKQ5LwXv-U8l8ahpPzorX-I/edit?gid=0#gid=0'; // <-- paste your Sheet ID here
+var SHEET_ID = '10bSefKsO4NuyVZJMDYNQAKQ5LwXv-U8l8ahpPzorX-I'; // <-- paste your Sheet ID here
 
 function doPost(e) {
   var lock = LockService.getScriptLock();
