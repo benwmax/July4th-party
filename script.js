@@ -37,8 +37,9 @@ form.addEventListener('submit', async (e) => {
 
   try {
     const res  = await fetch(APPS_SCRIPT_URL, {
-      method:  'POST',
-      body:    JSON.stringify(payload),
+      method:   'POST',
+      redirect: 'follow',
+      body:     JSON.stringify(payload),
     });
     const json = await res.json();
 
